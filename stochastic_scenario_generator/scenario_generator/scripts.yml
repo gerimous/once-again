@@ -1,0 +1,10 @@
+Sensitivity Simulation:
+
+  - name: stochastic scenario generator
+    label: Sensitivity Simulation
+    description: Automates simulation of samples and saves them in a csv
+    interfaces: [cli, dashboard]
+    module: scenario_generator.stochastic_scenario_generator
+    parameters: ["general:scenario", "general:multiprocessing","general:number-of-cpus-to-keep-free","general:debug",
+                 "scenario-generator:iterations","archetypes-mapper:input-databases","archetypes-mapper:buildings",
+                 "demand", "radiation"]
